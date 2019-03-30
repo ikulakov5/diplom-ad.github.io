@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+font-family: "OpenSans-Regular";
+src: url('../fonts/OpenSans-Regular.woff') format('woff'),
+url('../fonts/OpenSans-Regular.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url('../fonts/OpenSans-Bold.woff') format('woff'),
+  url('../fonts/OpenSans-Bold.ttf') format('truetype');
+
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+html {
+  font-size: 10px;
+  font-family: "OpenSans-Regular";
+}
+body {
+  margin: 0;
+}
+.header {
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+  background: url("../images/football_1920.jpg") no-repeat #0a0e34 center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.header-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #0a0e34, #0a0e34);
+  opacity: 0.9;
+  z-index: 0;
+}
+.main {
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+.main h1 {
+  color: #ffffff;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+.main-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-left: 20rem;
+}
+.main-text h1 {
+  font-size: 8rem;
+}
+.main-text h1:nth-child(1) {
+  align-self: flex-start;
+}
+
+.logo {
+  width: 19rem;
+  fill: #ffffff;
+}
+.app_buttons {
+  z-index: 2;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+
+}
+.app_button {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem;
+  width: 30rem;
+  height: 7.7rem;
+  border: 1px solid #5e42b0;
+  border-radius: 100px;
+  background-color: #5e42b0;
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.app_text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+}
+.app_logo {
+  width: 6rem;
+  height: 6rem;
+  fill: #ffffff;
+  padding-right: 1.5rem;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  z-index: -1;
+}
+.benefit_text {
+  width: 50%;
+  height: 730px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12rem;
+}
+.benefit_text h1 {
+  width: 90%;
+  color: #e6e6e6;
+  font-family: 'OpenSans-Bold';
+  font-size: 8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.benefit_text p {
+  color: #000000;
+  font-size: 2.4rem;
+  font-weight: normal;
+  width: 90%;
+}
+.benefit_bg {
+  width: 50%;
+  height: 730px;
+}
+.bg1 {
+  background: url("../images/be-active_1024.jpg") no-repeat #0a0e34 center;
+    background-size: cover;
+}
+.bg2 {
+  background: url("../images/find-contact_1024.jpg") no-repeat #0a0e34 center;
+    background-size: cover;
+}
+.bg3 {
+  background: url("../images/work-it_1024.jpg") no-repeat #0a0e34 center;
+    background-size: cover;
+}
+.number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 168px;
+  height: 155px;
+  background-color: #5e42b0;
+  margin-top: -60px;
+  z-index: 2;
+}
+.number span {
+  font-size: 2.4rem;
+  color: #f5f6f7;
+  font-weight: bold;
+}
+.number span::after {
+content: "";
+display: block;
+width: 24px;
+height: 5px;
+border-radius: 2px;
+background-color: #ffffff;
+opacity: 0.3;
+}
+
+
+
+
+
+.footer {
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+  background: url("../images/game_1920.jpg") no-repeat #0a0e34 center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.footer-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #0a0e34, #0a0e34);
+  opacity: 0.9;
+  z-index: 0;
+}
+.footer_content {
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.download {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.download_logo {
+  width: 13rem;
+  height: 13rem;
+  background-image: linear-gradient(150deg, #7656d6, #51379b);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+.dl_logo {
+  width: 10rem;
+  height: 9rem;
+  fill: #ffffff;
+}
+.download_text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  text-transform: uppercase;
+}
+.download_text h1 {
+  font-size: 7rem;
+  color: #ffffff;
+  margin: 0;
+}
+.download_text h4 {
+  font-size: 2.5rem;
+  color: #a496ca;
+  margin: 0;
+}
