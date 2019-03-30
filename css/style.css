@@ -190,6 +190,86 @@ border-radius: 2px;
 background-color: #ffffff;
 opacity: 0.3;
 }
+.sports {
+  max-width: 1920px;
+}
+.sports h2 {
+  color: #c1c1c1;
+  font-family: "OpenSans-Bold";
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  margin: 0;
+  }
+.sports p {
+  color: #000000;
+  font-size: 2rem;
+  max-width: 800px;
+  }
+.sports sup {
+  color: #000000;
+  font-family: "OpenSans-Bold";
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.sports sup::after {
+  content: " ";
+  display: block;
+  width: 19px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #5e42b0;
+  }
+.growth p {
+  color: #ffffff;
+}
+.growth {
+  background-color: #5e42b0;
+  padding-left: 52%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.growth sup::after {
+  background-color: #efefef;
+  }
+.collaboration {
+  padding-left: 52%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f5f4fa;
+}
+.connection {
+  padding-left: 52%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.athlets {
+  padding-left: 52%;
+}
+.athlets h1 {
+  color: #e7e7e7;
+  font-family: "OpenSans-Bold";
+  font-size: 8rem;
+  text-transform: uppercase;
+}
+
+.second_sports {
+  max-width: 1920px;;
+}
+.for_left {
+  padding-left: 10%;
+}
+
+
+
+
 
 
 
