@@ -127,7 +127,7 @@ body {
 }
 .benefit_text {
   width: 50%;
-  height: 730px;
+  height: 683px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,19 +149,13 @@ body {
 }
 .benefit_bg {
   width: 50%;
-  height: 730px;
+  height: 683px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
 }
-.bg1 {
-  background: url("../images/be-active_1024.jpg") no-repeat #0a0e34 center;
-    background-size: cover;
-}
-.bg2 {
-  background: url("../images/find-contact_1024.jpg") no-repeat #0a0e34 center;
-    background-size: cover;
-}
-.bg3 {
-  background: url("../images/work-it_1024.jpg") no-repeat #0a0e34 center;
-    background-size: cover;
+.benefit_bg:nth-child(2n) {
+  justify-content: flex-start;
 }
 .number {
   display: flex;
@@ -201,7 +195,8 @@ opacity: 0.3;
   overflow: hidden;
 }
 .footballer {
-  background: url("../images/footballer_566.png") no-repeat right;
+  display: flex;
+  justify-content: flex-end;
   position: absolute;
   width: 50%;
   height: 908px;
@@ -210,7 +205,8 @@ opacity: 0.3;
   z-index: 3;
 }
 .basketballer {
-  background: url("../images/basketballer_991.png") no-repeat left;
+  display: flex;
+  justify-content: flex-start;
   position: absolute;
   width: 100%;
   height: 815px;
@@ -225,6 +221,7 @@ opacity: 0.3;
   font-size: 3.6rem;
   text-transform: uppercase;
   margin: 0;
+  display: inline-block;
   }
 .sports p {
   color: #000000;
@@ -232,14 +229,15 @@ opacity: 0.3;
   max-width: 800px;
   z-index: 2;
   }
-.sports sup {
+.sports span {
   color: #000000;
   font-family: "OpenSans-Bold";
   font-size: 1.8rem;
   text-transform: uppercase;
+  vertical-align: super;
   display: inline-block;
 }
-.sports sup::after {
+.sports span::after {
   content: " ";
   display: block;
   width: 19px;
@@ -271,13 +269,13 @@ opacity: 0.3;
 .growth2 p {
   color: #ffffff;
 }
-.growth2 sup::after {
+.growth2 span::after {
   background-color: #ffffff;
   }
-.growth sup::after {
+.growth span::after {
   background-color: #efefef;
   }
-.growth2 sup {
+.growth2 span {
   color: #9173e6;
 }
 .collaboration {
@@ -409,11 +407,7 @@ opacity: 0.3;
   .app_button {
     margin: 1rem;
   }
-  .footballer {
-    background: url("../images/footballer_497.png") no-repeat right;
-  }
   .basketballer {
-    background: url("../images/basketballer_436.png") no-repeat left;
     left: 50%;
     z-index: 0;
   }
@@ -423,19 +417,6 @@ opacity: 0.3;
   .benefit_bg {
     width: 100%;
     height: 584px;
-  }
-  .bg1 {
-    background: url("../images/be-active_960.jpg") no-repeat #0a0e34 center;
-      background-size: cover;
-  }
-  .bg2 {
-    background: url("../images/find-contact_960.jpg") no-repeat #0a0e34 center;
-      background-size: cover;
-      order: 0;
-  }
-  .bg3 {
-    background: url("../images/work-it_960.jpg") no-repeat #0a0e34 center;
-      background-size: cover;
   }
   .benefit_text h1 {
     margin: 0;
@@ -560,16 +541,16 @@ opacity: 0.3;
   }
 
   .footballer {
-    background: url("../images/footballer_192.png") no-repeat center;
     z-index: 0;
     position: static;
     width: 100%;
     height: 281px;
     left: 0;
     top: 0;
+    justify-content: center;
   }
   .basketballer {
-    background: url("../images/basketballer_302.png") no-repeat center;
+    justify-content: center;
     z-index: 0;
     position: static;
     width: 100%;
@@ -583,10 +564,10 @@ opacity: 0.3;
     font-size: 1.5rem;
     max-width: 600px;
     }
-  .sports sup {
+  .sports span {
     font-size: 1.4rem;
   }
-  .sports sup::after {
+  .sports span::after {
     width: 15px;
     height: 4px;
     }
@@ -604,13 +585,13 @@ opacity: 0.3;
   .growth2 p {
     color: #ffffff;
   }
-  .growth2 sup::after {
+  .growth2 span::after {
     background-color: #ffffff;
     }
-  .growth sup::after {
+  .growth span::after {
     background-color: #efefef;
     }
-  .growth2 sup {
+  .growth2 span {
     color: #9173e6;
   }
   .collaboration {
@@ -652,19 +633,6 @@ opacity: 0.3;
   .benefit_bg {
     width: 100%;
     height: 351px;
-  }
-  .bg1 {
-    background: url("../images/be-active_640.jpg") no-repeat #0a0e34 center;
-      background-size: cover;
-  }
-  .bg2 {
-    background: url("../images/find-contact_640.jpg") no-repeat #0a0e34 center;
-      background-size: cover;
-      order: 0;
-  }
-  .bg3 {
-    background: url("../images/work-it_640.jpg") no-repeat #0a0e34 center;
-      background-size: cover;
   }
   .benefit_text h1 {
     margin: 0;
