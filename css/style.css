@@ -67,7 +67,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-.main-text h1 {
+.main_text {
   font-size: 8rem;
   font-family: "OpenSans-Bold";
 }
@@ -113,7 +113,7 @@ body {
   justify-content: center;
   margin: 1.5rem;
 }
-.app_text span {
+.bold_app_text {
   display: block;
   font-weight: bold;
 }
@@ -128,6 +128,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+
 }
 .benefit_text {
   width: 50%;
@@ -136,20 +137,17 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-left: 12rem;
+  color: #000000;
+  font-size: 2.4rem;
+  font-weight: normal;
 }
-.benefit_text h1 {
+.benefits_header {
   width: 90%;
   color: #e6e6e6;
   font-family: 'OpenSans-Bold';
   font-size: 8rem;
   font-weight: bold;
   text-transform: uppercase;
-}
-.benefit_text p {
-  color: #000000;
-  font-size: 2.4rem;
-  font-weight: normal;
-  width: 90%;
 }
 .benefit_bg {
   width: 50%;
@@ -171,13 +169,11 @@ body {
   height: 155px;
   background-color: #5e42b0;
   margin-top: -60px;
-}
-.number span {
   font-size: 2.4rem;
   color: #f5f6f7;
   font-weight: bold;
 }
-.number span::after {
+.num::after {
 content: "";
 display: block;
 width: 24px;
@@ -301,7 +297,7 @@ opacity: 0.3;
   width: 100%;
   padding-top: 10rem;
 }
-.athlets h1 {
+.athlets h2 {
   color: #e7e7e7;
   font-family: "OpenSans-Bold";
   font-size: 8rem;
@@ -342,7 +338,7 @@ opacity: 0.3;
 }
 
 .download {
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -369,13 +365,13 @@ opacity: 0.3;
   margin-left: 1.5rem;
   text-transform: uppercase;
 }
-.download_text h1 {
+.download_header {
   font-size: 7rem;
   color: #ffffff;
   margin: 0;
   font-family: "OpenSans-Bold";
 }
-.download_text h4 {
+.download_sub_header {
   font-size: 2.5rem;
   color: #a496ca;
   margin: 0;
@@ -415,15 +411,13 @@ opacity: 0.3;
     width: 100%;
     height: 584px;
   }
-  .benefit_text h1 {
-    margin: 0;
-  }
   .benefit_text {
     width: 100%;
     height: 370px;
     padding: 3rem;
     justify-content: center;
     align-content: flex-start;
+    margin: 0;
   }
   .benefit_text:nth-child(1) {
     order: 3;
@@ -442,10 +436,10 @@ opacity: 0.3;
   .download {
     flex-direction: column;
   }
-  .download_text h1 {
+  .download_header {
     font-size: 6rem;
   }
-  .download_text h4 {
+  .download_sub_header {
     font-size: 3.2rem;
   }
   .footer {
@@ -488,6 +482,7 @@ opacity: 0.3;
   .download {
     flex-direction: column;
     justify-content: flex-start;
+    padding-top: 10rem;
   }
   .download_logo {
     width: 7.2rem;
@@ -508,7 +503,7 @@ opacity: 0.3;
     margin: 0;
     padding-left: 1rem;
   }
-  .main-text h1 {
+  .main_text {
     font-size: 2.8rem;
     font-family: "OpenSans-Bold";
   }
@@ -599,7 +594,7 @@ opacity: 0.3;
     padding-top: 2.1rem;
     padding-left: 2.1rem;
   }
-  .athlets h1 {
+  .athlets h2 {
     font-size: 5rem;
     margin: 0;
   }
@@ -614,12 +609,9 @@ opacity: 0.3;
     width: 100%;
     height: 351px;
   }
-  .benefit_text h1 {
+  .benefits_header {
     margin: 0;
     font-size: 2.8rem;
-  }
-  .benefit_text p {
-    font-size: 1.6rem;
   }
   .benefit_text {
     width: 100%;
@@ -627,6 +619,7 @@ opacity: 0.3;
     padding: 3rem;
     justify-content: center;
     align-content: flex-start;
+    font-size: 1.6rem;
   }
   .benefit_text:nth-child(1) {
     order: 3;
@@ -640,11 +633,9 @@ opacity: 0.3;
     height: 7rem;
     left: 2rem;
     top: 60%;
-  }
-  .number span {
     font-size: 1.4rem;
   }
-  .number span::after {
+  .num::after {
   width: 16px;
   height: 4px;
   }
@@ -655,11 +646,11 @@ opacity: 0.3;
     background-size: cover;
   }
 
-  .download_text h1 {
+  .download_header {
     font-size: 3.2rem;
     margin-top: 6rem;
   }
-  .download_text h4 {
+  .download_sub_header {
     font-size: 1.4rem;
   }
 }
