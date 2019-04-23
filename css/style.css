@@ -495,7 +495,7 @@ opacity: 0.3;
     height: 4.5rem;
   }
   .app_text {
-    padding-left: 0.2rem;
+    margin: 0.2rem;
   }
   .download {
     flex-direction: column;
@@ -620,17 +620,6 @@ opacity: 0.3;
   .for_left {
     padding: 2.1rem;
   }
-
-
- 
-
-
-
-
-
-
-
-
   .benefits {
     flex-direction: column;
   }
