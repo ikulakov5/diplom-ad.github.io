@@ -217,13 +217,13 @@ opacity: 0.3;
   margin: 0;
   display: inline-block;
   }
-.sports p {
+.sports_text {
   color: #000000;
   font-size: 2rem;
   max-width: 800px;
   z-index: 2;
   }
-.sports span {
+.sports_num {
   color: #000000;
   font-family: "OpenSans-Bold";
   font-size: 1.8rem;
@@ -231,7 +231,7 @@ opacity: 0.3;
   vertical-align: super;
   display: inline-block;
 }
-.sports span::after {
+.sports_num::after {
   content: " ";
   display: block;
   width: 19px;
@@ -545,15 +545,15 @@ opacity: 0.3;
   .sports_header {
     font-size: 2.3rem;
     }
-  .sports p {
+  .sports_text {
     color: #000000;
     font-size: 1.5rem;
     max-width: 600px;
     }
-  .sports span {
+  .sports_num {
     font-size: 1.4rem;
   }
-  .sports span::after {
+  .sports_num::after {
     width: 15px;
     height: 4px;
     }
